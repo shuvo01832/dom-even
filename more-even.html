@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more Events</title>
+</head>
+<body>
+    <button id="btn-mouse">mouse minnic</button>
+    <input id="mouse-text" type="name" placeholder="enter name">
+    <input id="mouse-text" type="email" placeholder="enter email">
+    <script>
+        // step1-mouseenter dile অটোমেটিক কাজ করবে
+
+    //   document.getElementById('btn-mouse').addEventListener('mouseenter',function(){
+    //     console.log('eveent Triggered')
+    //   })
+    // step2- mousemove dile অটোমেটিক লেখাটা কাজ করবে
+    
+    //  
+    // stpe3- mouseout dile  অটোমেটিক লেখাটা থেকে মাউস সারালে লেখাটা কাজ করবে
+
+      document.getElementById('btn-mouse').addEventListener('mouseout',function(){
+        console.log('eveent Triggered')
+      })
+
+    //   stpe4-focus korle মাউস বক্সের উপর নিলে বক্সের লেখাটা সো করবে
+      document.getElementById('mouse-text').addEventListener('focus',function(){
+        console.log('enter the name your')
+      })
+      document.getElementById('mouse-text').addEventListener('focus',function(){
+        console.log('enter the email your')
+      })
+    //   stpe5-blur korle বক্সের ভেতরে কিছু লেখে বাহিরে ক্লিক করলে ব্লার লেখা সো
+      document.getElementById('mouse-text').addEventListener('blur',function(){
+        console.log('enter done name your')
+      })
+      document.getElementById('mouse-text').addEventListener('blur',function(){
+        console.log('enter done email your')
+      })
+    </script>
+</body>
+</html>
