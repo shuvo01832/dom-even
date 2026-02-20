@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom even</title>
+</head>
+<body>
+    <!-- first position -->
+  <h2>dom doma dom</h2>
+  <button onclick="console.log(54)">click me</button>
+  <input type="text" placeholder="enter the name">
+  <br>
+  <button onclick="console.log(6)">click me</button>
+<button onclick="makered()">make red</button>
+<script>
+    function makered(){
+        document.body.style.background='red';
+
+    }
+</script>
+<button onclick="makeyellow()">make yellow</button>
+<script>
+    function makeyellow(){
+        document.body.style.background='yellow'
+    }
+</script>
+  <!-- second position -->
+   <button id="btn-make-gold">make gold</button>
+    <script>
+        // const btnmakered=document.getElementById('btn-make-red');
+        // console.log(btnmakered);
+        document.getElementById('btn-make-gold').addEventListener('click',
+            function makered(){
+                document.body.style.background = 'gold'
+            }
+        )
+    </script>
+    <button id="btn-make-tomato"> make tomato</button>
+    <script>
+       document.getElementById('btn-make-tomato').addEventListener('click',
+        function maketomato(){
+            document.body.style.background='tomato'
+        }
+       )
+    </script>
+  <script src="js/even.js"></script>
+</body>
+</html>

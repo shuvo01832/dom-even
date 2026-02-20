@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even html</title>
+</head>
+<body>
+    <h2 id="title-text">Hello shuvo</h2>
+    <button id="btn-page-update">update</button>
+    <script>
+       document.getElementById('btn-page-update')
+       .addEventListener('click', function(){
+        // console.log('btn click')
+        const titleTextElement=document.getElementById('title-text');
+        console.log( titleTextElement);
+        titleTextElement.innerText='update page title'
+
+       })
+    </script>
+    <button></button>
+
+    <script src="./js-even.js/even.js"></script>
+</body>
+</html>
